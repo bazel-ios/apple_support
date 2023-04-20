@@ -14,7 +14,7 @@
 # limitations under the License.
 """Configuring the C++ toolchain on macOS."""
 
-load("@bazel_tools//tools/osx:xcode_configure.bzl", "run_xcode_locator")
+load("//crosstool:xcode_configure.bzl", "run_xcode_locator")
 load(
     "@bazel_tools//tools/cpp:lib_cc_configure.bzl",
     "escape_string",
